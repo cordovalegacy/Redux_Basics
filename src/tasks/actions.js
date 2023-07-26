@@ -6,6 +6,6 @@ export const removeTask = (taskId) => {
     return { type: "REMOVE_TASK", payload: { id: taskId } }
 }
 
-export const completeTask = (task) => {
-    return { type: "COMPLETE_TASK", payload: { task } }
+export const completeTask = (id) => {
+    return { type: "COMPLETE_TASK", payload: { id: id } }
 }
