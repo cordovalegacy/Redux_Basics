@@ -1,14 +1,21 @@
-import { legacy_createStore as createStore, applyMiddleware } from 'redux'
+// import { configureStore } from '@reduxjs/toolkit'
 
-import reducer from './reducer'
-import thunk from 'redux-thunk'
+// import reducer from './reducer'
 
-const store = createStore(
-    reducer,
-    applyMiddleware(thunk)
-)
+// const store = configureStore({ reducer })
 
-export default store
+
+// !Below is for Redux Core
+// import thunk from 'redux-thunk'
+// import { legacy_createStore as createStore, applyMiddleware } from 'redux'
+// import { devToolsEnhancer } from 'redux-devtools-extension'
+// const store = createStore(
+//     reducer,
+//     applyMiddleware(thunk),
+//     devToolsEnhancer({ trace: true })
+// )
+
+// export default store
 
 
 // !Reducer returns an object
